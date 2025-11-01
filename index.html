@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilson008's Academic & Professional Portfolio</title>
+    <!-- 加载 Tailwind CSS 框架 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 使用 Inter 字体并配置 Tailwind -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f9; /* 柔和的背景色 */
+        }
+        .section-heading {
+            border-left: 5px solid #3b82f6; /* 蓝色左边框 */
+            padding-left: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        /* 响应式头像容器，确保移动端不会太挤 */
+        .profile-sidebar {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            background-color: #3b82f6;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            z-index: 10;
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 4px;
+            top: 1rem;
+            bottom: -2rem;
+            width: 2px;
+            background-color: #e5e7eb;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部导航栏，用于快速跳转 -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md p-4 mb-8">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-center space-x-4 text-sm font-medium">
+            <a href="#profile" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Profile</a>
+            <a href="#education" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Education</a>
+            <a href="#work" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Work</a>
+            <a href="#publications" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Publications</a>
+            <a href="#projects" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Projects</a>
+            <a href="#teaching" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Teaching</a>
+            <a href="#reviewing" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Reviewing</a>
+            <a href="#awards" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Grants & Awards</a>
+        </div>
+    </nav>
+
+    <!-- 主内容区域，居中显示并限制最大宽度 -->
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- 1. 个人简介 (Personal Profile) - 使用 Flexbox 实现两栏布局 -->
+        <section id="profile" class="mb-12">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-8">Personal Portfolio</h2>
+
+            <div class="flex flex-col-reverse md:flex-row gap-8">
+                
+                <!-- 左侧: 个人说明 (Personal Description) -->
+                <div class="md:w-3/4 bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 section-heading">Wilson008</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        I am a dedicated researcher and software engineer with a strong background in Artificial Intelligence, data science, and scalable system architecture. My work focuses on bridging theoretical concepts with practical, high-impact applications in the technology sector and academia. I hold a Ph.D. in Computer Science and have published numerous papers in top-tier journals.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        My expertise includes advanced machine learning models, cloud computing environments, and developing open-source tools for research reproducibility. I am always seeking new challenges that push the boundaries of technology and require collaborative problem-solving.
+                    </p>
+                </div>
+
+                <!-- 右侧侧面: 个人信息 (Personal Info) -->
+                <div class="md:w-1/4 profile-sidebar p-6 flex flex-col items-center text-center">
+                    <!-- 个人头像 (Avatar) -->
+                    <img src="https://placehold.co/128x128/3b82f6/ffffff?text=W008" alt="Profile Avatar" class="w-32 h-32 rounded-full border-4 border-blue-500 mb-4">
+                    
+                    <!-- 姓名 (Name) -->
+                    <h4 class="text-xl font-semibold text-gray-900">Wilson Smith</h4>
+                    
+                    <!-- 邮箱 (Email) -->
+                    <a href="mailto:wilson008@example.com" class="text-blue-600 hover:text-blue-800 text-sm mt-1">wilson008@example.com</a>
+                    
+                    <!-- 格言 (Motto) -->
+                    <p class="text-gray-500 italic mt-4 text-center text-sm">
+                        "The best way to predict the future is to create it."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 教育 (Education) -->
+        <section id="education" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">Education</h3>
+            
+            <div class="border-l border-gray-200 ml-1">
+                <!-- 教育经历 1 -->
+                <div class="timeline-item">
+                    <p class="text-sm text-gray-500">2018 - 2022</p>
+                    <h4 class="text-lg font-semibold text-gray-800">Ph.D. in Computer Science</h4>
+                    <p class="text-gray-600">Massachusetts Institute of Technology (MIT), Cambridge, MA</p>
+                    <p class="text-sm text-gray-500 mt-1">Dissertation: Advanced Deep Learning Architectures for Time-Series Analysis</p>
+                </div>
+                <!-- 教育经历 2 -->
+                <div class="timeline-item">
+                    <p class="text-sm text-gray-500">2014 - 2018</p>
+                    <h4 class="text-lg font-semibold text-gray-800">B.S. in Software Engineering</h4>
+                    <p class="text-gray-600">Stanford University, Stanford, CA</p>
+                    <p class="text-sm text-gray-500 mt-1">Minor in Applied Mathematics. Graduated with Honors.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 工作经历 (Work Experience) -->
+        <section id="work" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">Work Experience</h3>
+            
+            <div class="border-l border-gray-200 ml-1">
+                <!-- 工作经历 1 -->
+                <div class="timeline-item">
+                    <p class="text-sm text-gray-500">2022 - Present</p>
+                    <h4 class="text-lg font-semibold text-gray-800">Senior Research Scientist</h4>
+                    <p class="text-gray-600">Google Research, Mountain View, CA</p>
+                    <ul class="list-disc list-inside text-sm text-gray-600 mt-2 space-y-1">
+                        <li>Led a team of 5 engineers in developing production-ready ML models for natural language understanding.</li>
+                        <li>Published 3 papers at NeurIPS and ICML on model efficiency and quantization.</li>
+                    </ul>
+                </div>
+                <!-- 工作经历 2 -->
+                <div class="timeline-item">
+                    <p class="text-sm text-gray-500">2018 - 2022</p>
+                    <h4 class="text-lg font-semibold text-gray-800">Teaching Assistant & Research Fellow</h4>
+                    <p class="text-gray-600">MIT, Computer Science Department</p>
+                    <ul class="list-disc list-inside text-sm text-gray-600 mt-2 space-y-1">
+                        <li>Assisted in teaching "Introduction to Algorithms" and "Advanced ML".</li>
+                        <li>Conducted independent research on reinforcement learning techniques.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 出版物 (Publications) -->
+        <section id="publications" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">Publications</h3>
+
+            <!-- 2024 年 -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-800 mb-3 border-b pb-1">2024</h4>
+                <ul class="space-y-3 text-gray-700">
+                    <li>
+                        <span class="font-medium">W. Smith</span>, J. Doe, and A. B. Chen, "Scaling Laws for Transformer Models on Large Datasets."
+                        <span class="text-sm italic text-blue-600 ml-2">[Journal of AI Research, Vol 55(2), pp. 120-135]</span>
+                    </li>
+                    <li>
+                        R. K. Sharma and <span class="font-medium">W. Smith</span>, "Efficient Model Distillation in Federated Learning."
+                        <span class="text-sm italic text-green-600 ml-2">[International Conference on Machine Learning (ICML) 2024]</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- 2023 年 -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-800 mb-3 border-b pb-1">2023</h4>
+                <ul class="space-y-3 text-gray-700">
+                    <li>
+                        <span class="font-medium">W. Smith</span>, et al., "A Novel Approach to Multi-Modal Data Fusion."
+                        <span class="text-sm italic text-blue-600 ml-2">[IEEE Transactions on Neural Networks, Vol 34(11)]</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 2022 年 -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-800 mb-3 border-b pb-1">2022</h4>
+                <ul class="space-y-3 text-gray-700">
+                    <li>
+                        M. Z. Khan and <span class="font-medium">W. Smith</span>, "Temporal Pattern Recognition using Gated Recurrent Units."
+                        <span class="text-sm italic text-purple-600 ml-2">[Ph.D. Dissertation, MIT]</span>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- 5. 项目 (Projects) -->
+        <section id="projects" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">Selected Projects</h3>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 项目 1 -->
+                <div class="border p-4 rounded-lg hover:shadow-md transition duration-300">
+                    <h4 class="text-lg font-semibold text-blue-700">AI Code Assistant Framework</h4>
+                    <p class="text-sm text-gray-500 mb-2">Lead Developer | 2023</p>
+                    <p class="text-gray-600 text-sm">Developed a lightweight Python framework for integrating large language models (LLMs) into standard IDEs, leading to a 40% increase in developer efficiency for routine tasks. <a href="#" class="text-blue-500 hover:underline">[GitHub Link]</a></p>
+                </div>
+                <!-- 项目 2 -->
+                <div class="border p-4 rounded-lg hover:shadow-md transition duration-300">
+                    <h4 class="text-lg font-semibold text-blue-700">Cloud-Native Data Pipeline</h4>
+                    <p class="text-sm text-gray-500 mb-2">Architect | 2022</p>
+                    <p class="text-gray-600 text-sm">Designed and implemented a serverless data processing pipeline on AWS (S3, Lambda, DynamoDB) capable of handling petabytes of streaming sensor data with near-real-time latency.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 6. 教学经验 (Teaching Experience) -->
+        <section id="teaching" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">Teaching Experience</h3>
+            
+            <ul class="space-y-4">
+                <li class="border-l-4 border-yellow-500 pl-4">
+                    <p class="text-sm text-gray-500">Spring 2021</p>
+                    <p class="font-semibold text-gray-800">Course: Introduction to Machine Learning</p>
+                    <p class="text-gray-600 text-sm">MIT. Role: Head Teaching Assistant. Responsibilities included curriculum development, leading weekly recitation sessions for 150+ students, and grading complex projects.</p>
+                </li>
+                <li class="border-l-4 border-yellow-500 pl-4">
+                    <p class="text-sm text-gray-500">Fall 2019</p>
+                    <p class="font-semibold text-gray-800">Course: Data Structures and Algorithms</p>
+                    <p class="text-gray-600 text-sm">MIT. Role: Grader and Lab Instructor. Focused on Python implementation and complexity analysis.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 7. 评审经历 (Reviewing Experience) -->
+        <section id="reviewing" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">Reviewing Experience</h3>
+            
+            <div class="space-y-4 text-gray-700">
+                <p>Regular Reviewer for:</p>
+                <ul class="list-disc list-inside ml-4 grid md:grid-cols-2 gap-2 text-sm">
+                    <li>Neural Information Processing Systems (NeurIPS)</li>
+                    <li>International Conference on Machine Learning (ICML)</li>
+                    <li>The Journal of Artificial Intelligence Research (JAIR)</li>
+                    <li>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</li>
+                </ul>
+                <p class="text-sm text-gray-500 italic mt-3">
+                    Served as an area chair for ICML 2024 and an outstanding reviewer for NeurIPS 2023.
+                </p>
+            </div>
+        </section>
+
+        <!-- 8. Grants and Awards -->
+        <section id="awards" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">Grants and Awards</h3>
+            
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <span class="text-blue-600 mr-3 text-xl">&#9733;</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">NSF Doctoral Dissertation Research Grant</p>
+                        <p class="text-gray-600 text-sm">National Science Foundation | 2021 - $50,000</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-blue-600 mr-3 text-xl">&#9733;</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">Outstanding Reviewer Award</p>
+                        <p class="text-gray-600 text-sm">NeurIPS Conference | 2023</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-blue-600 mr-3 text-xl">&#9733;</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">Google Ph.D. Fellowship Finalist</p>
+                        <p class="text-gray-600 text-sm">Google | 2020</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 9. 警告信息 (Warning Message) -->
+        <section id="warning" class="mb-12 p-8 rounded-xl bg-yellow-100 border-l-4 border-yellow-500 shadow-lg">
+            <h3 class="text-3xl font-bold text-yellow-800 section-heading !border-l-4">Important Notice</h3>
+            <p class="text-yellow-700">
+                The content on this website, including publication lists and project details, is for informational purposes only and may not be fully up-to-date. Please refer to official institutional records or my verified academic profiles (e.g., Google Scholar, ORCID) for the most current and accurate information regarding my professional activities.
+            </p>
+        </section>
+
+        <!-- 底部版权信息 -->
+        <footer class="text-center text-gray-500 text-sm mt-12 pt-6 border-t border-gray-300">
+            <p>&copy; 2025 Wilson Smith. Powered by GitHub Pages.</p>
+        </footer>
+
+    </main>
+
+    <!-- 简单的 JavaScript 脚本用于平滑滚动 -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
