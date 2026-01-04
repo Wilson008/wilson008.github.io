@@ -56,24 +56,24 @@
 <body>
 
     <!-- 顶部导航栏，用于快速跳转 -->
-    <nav class="sticky top-0 z-50 bg-white shadow-md p-4 mb-8">
-        <div class="max-w-6xl mx-auto flex flex-wrap justify-center space-x-4 text-sm font-medium">
-            <a href="#profile" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Profile</a>
-            <a href="#education" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Education</a>
-            <a href="#work" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Work</a>
-            <a href="#publications" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Publications</a>
-            <a href="#courses" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Courses & Training</a>
-            <a href="#teaching" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Teaching</a>
-            <a href="#reviewing" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Reviewing</a>
-            <a href="#awards" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Grants & Awards</a>
-            <a href="#news" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">News & Updates</a>
-            <a href="#projects" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Projects</a>
-            <a href="#warning" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg">Important Notice</a>
+    <nav class="md:fixed md:left-0 md:top-0 md:h-full md:w-48 bg-white shadow-md p-4 z-50 overflow-y-auto">
+        <div class="flex flex-col space-y-2 text-sm font-medium">
+            <a href="#profile" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg hover:bg-gray-100">Profile</a>
+            <a href="#education" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg hover:bg-gray-100">Education</a>
+            <a href="#work" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg hover:bg-gray-100">Work</a>
+            <a href="#publications" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg hover:bg-gray-100">Publications</a>
+            <a href="#teaching" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg hover:bg-gray-100">Teaching</a>
+            <a href="#reviewing" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg hover:bg-gray-100">Reviewing</a>
+            <a href="#awards" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg hover:bg-gray-100">Grants & Awards</a>
+            <a href="#news" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg hover:bg-gray-100">News & Updates</a>
+            <a href="#courses" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg hover:bg-gray-100">Courses & Training</a>
+            <a href="#projects" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg hover:bg-gray-100">Projects</a>
+            <a href="#warning" class="text-gray-700 hover:text-blue-600 transition duration-150 p-2 rounded-lg hover:bg-gray-100">Important Notice</a>
         </div>
     </nav>
 
     <!-- 主内容区域，居中显示并限制最大宽度 -->
-    <main class="max-w-6xl mx-auto p-4 md:p-8">
+    <main class="md:ml-48 max-w-6xl p-4 md:p-8">
 
         <!-- 1. 个人简介 (Personal Profile) - 使用 Flexbox 实现两栏布局 -->
         <section id="profile" class="mb-12">
@@ -272,7 +272,7 @@
         <section id="publications" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
             <h3 class="text-3xl font-bold text-gray-800 section-heading">Publications</h3>
 
-            <!-- 2025 年 -->
+            <!-- 2026 年 -->
             <div class="mb-6">
                 <h4 class="text-xl font-bold text-gray-800 mb-3 border-b pb-1">2025</h4>
                 <ul class="space-y-3 text-gray-700">
@@ -281,6 +281,13 @@
                         <a href="https://link.springer.com/article/10.1007/s10664-025-10775-2" class="text-blue-700 hover:underline font-semibold"> "Development and Evolution of Xtext-based DSLs on GitHub: An Empirical Investigation."</a>
                         <span class="text-sm italic text-blue-600 ml-2">[Empirical Software Engineering (EMSE), Volume 31, article number 48, (2026). Published: 16 December 2025]</span>
                     </li>
+                </ul>
+            </div>
+
+            <!-- 2025 年 -->
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-800 mb-3 border-b pb-1">2025</h4>
+                <ul class="space-y-3 text-gray-700">
                     <li>
                         <span class="font-medium">Weixing Zhang</span>, 
                         <a href="https://gupea.ub.gu.se/handle/2077/89382" class="text-blue-700 hover:underline font-semibold"> "Evolution of Textual Domain-Specific Languages in the Context of Model-Driven Engineering."</a>
@@ -373,7 +380,145 @@
 
         </section>
 
-        <!-- 5. 课程 ( Courses) -->
+        
+
+        <!-- 5. 教学经验 (Teaching Experience) -->
+        <section id="teaching" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">Teaching Experience</h3>
+            
+            <ul class="space-y-4">
+                <li class="border-l-4 border-yellow-500 pl-4">
+                    <p class="text-sm text-gray-500">Fall 2025, Karlsruhe Institute of Technology</p>
+                    <p class="font-semibold text-gray-800">Course: Empirical Software Engineering</p>
+                    <p class="text-gray-600 text-sm">Role: Guest Lectuer. Provided a guest lecture "Software Repository Mining in Empirical Software Engineering.".</p>
+                </li>
+                <li class="border-l-4 border-yellow-500 pl-4">
+                    <p class="text-sm text-gray-500">Fall 2024, University of Gothenburg</p>
+                    <p class="font-semibold text-gray-800">Course: Software Engineering for Data-Intensive AI Applications</p>
+                    <p class="text-gray-600 text-sm">Role: Lectuer. Provided part of the lectures in the whole course.</p>
+                </li>
+                <li class="border-l-4 border-yellow-500 pl-4">
+                    <p class="text-sm text-gray-500">Spring 2024, University of Gothenburg</p>
+                    <p class="font-semibold text-gray-800">Course: Software Analysis and Design</p>
+                    <p class="text-gray-600 text-sm">Role: Leader of Teaching Assistant, Grader. Responsibilities included TA management, grading.</p>
+                </li>
+                <li class="border-l-4 border-yellow-500 pl-4">
+                    <p class="text-sm text-gray-500">Fall 2023, University of Gothenburg</p>
+                    <p class="font-semibold text-gray-800">Course: Software evolution project</p>
+                    <p class="text-gray-600 text-sm">Role: Teaching Assistant. Focused on Python implementation, technical support, and student mangement.</p>
+                </li>
+                <li class="border-l-4 border-yellow-500 pl-4">
+                    <p class="text-sm text-gray-500">Fall 2022, University of Gothenburg</p>
+                    <p class="font-semibold text-gray-800">Course:  Software Architecture</p>
+                    <p class="text-gray-600 text-sm">Role: Teaching Assistant, Grader. Responsibilities included lab sessions, grading student course papers.</p>
+                </li>
+                <li class="border-l-4 border-yellow-500 pl-4">
+                    <p class="text-sm text-gray-500">Spring 2021 and Spring 2022, University of Gothenburg</p>
+                    <p class="font-semibold text-gray-800">Course: Software Language Engineering for Domain-Specific Languages</p>
+                    <p class="text-gray-600 text-sm">Role: Teaching Assistant, Grader. Responsibilities included group management, leading weekly lab sessions for multiple groups of students, and grading student projects.</p>
+                </li>
+                <li class="border-l-4 border-yellow-500 pl-4">
+                    <p class="text-sm text-gray-500">Fall 2020, University of Gothenburg</p>
+                    <p class="font-semibold text-gray-800">Course: Team-Programming</p>
+                    <p class="text-gray-600 text-sm">Role: Teaching Assistant. Responsibilities included group management, leading weekly lab sessions for multiple groups of students, and grading student projects.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 6. 评审经历 (Reviewing Experience) -->
+        <section id="reviewing" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">Reviewing Experience</h3>
+            
+            <div class="space-y-4 text-gray-700">
+                <p>Reviewer for:</p>
+                <ul class="list-disc list-inside ml-4 grid md:grid-cols-2 gap-2 text-sm">
+                    <li>The special issue "Software Language Engineering" of Journal of Systems and Software</li>
+                    <li>The journal of IEEE Transactions on Industrial Cyber-Physical Systems</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 7. Grants and Awards -->
+        <section id="awards" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">Grants and Awards</h3>
+            
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <span class="text-blue-600 mr-3 text-xl">&#9733;</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">2022 SoSyM-First Paper Award</p>
+                        <p class="text-gray-600 text-sm"> Awarded October 2022</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 8. 新闻与更新 (News & Updates) - 简洁列表样式 -->
+        <section id="news" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">News & Updates</h3>
+            
+            <ul class="list-none space-y-2">
+                <!-- 新闻/事件 1 -->
+                <li class="text-gray-700">
+                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2025/12/09:</span> 
+                    Provided a guest lecture "Software Repository Mining in Empirical Software Engineering" for the course "Empirical Software Engineering" at KIT.
+                </li>
+
+                <!-- 新闻/事件 1 -->
+                <li class="text-gray-700">
+                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2025/10/15:</span> 
+                    Successfully defended my Doctoral dissertation at the University of Gothenburg.
+                </li>
+
+                <!-- 新闻/事件 1 -->
+                <li class="text-gray-700">
+                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2025/10/01:</span> 
+                    Joined Karlsruhe Institute of Technology (KIT) as a Post-Doctoral Researcher.
+                </li>
+
+                <!-- 新闻/事件 1 -->
+                <li class="text-gray-700">
+                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2025/06/10:</span> 
+                    Presented on the First Large Language Models for Software Engineering Workshop (LLM4SE 2025).
+                </li>
+
+                <!-- 新闻/事件 1 -->
+                <li class="text-gray-700">
+                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2024/08/29:</span> 
+                    Presented on the 50th Euromicro Conference Series on Software Engineering and Advanced Applications (SEAA 2024).
+                </li>
+                
+                <!-- 新闻/事件 2 -->
+                <li class="text-gray-700">
+                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2023/11/29:</span> 
+                    Passed the Licentiate thesis defense.
+                </li>
+
+                <!-- 新闻/事件 2 -->
+                <li class="text-gray-700">
+                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2023/10/23:</span> 
+                    Presented on 16th ACM SIGPLAN International Conference on Software Language Engineering (SLE 2023)
+                </li>
+
+                <!-- 新闻/事件 2 -->
+                <li class="text-gray-700">
+                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2023/02/20:</span> 
+                    Presented on 11th International Conference on Model-Based Software and Systems Engineering (MODELSWARD 2023)
+                </li>
+                
+                <!-- 新闻/事件 3 -->
+                <li class="text-gray-700">
+                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2020/09/01:</span> 
+                    Joined the CSE department at the University of Gothenburg and Chalmers University of Gothenburg a Ph.D. student.
+                </li>
+                
+                <!-- 您可以继续添加更多新闻，例如：论文接收、Grants 获批等 -->
+                <!-- 示例：<li class="text-gray-700"><span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2025/01/20:</span> Our paper on LLMs in SE was accepted by ICSE 2025.</li> -->
+
+            </ul>
+        </section>
+
+        <!-- 9. 课程 ( Courses) -->
         <section id="courses" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
             <h3 class="text-3xl font-bold text-gray-800 section-heading">Courses & Training</h3>
             
@@ -499,142 +644,6 @@
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <!-- 6. 教学经验 (Teaching Experience) -->
-        <section id="teaching" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
-            <h3 class="text-3xl font-bold text-gray-800 section-heading">Teaching Experience</h3>
-            
-            <ul class="space-y-4">
-                <li class="border-l-4 border-yellow-500 pl-4">
-                    <p class="text-sm text-gray-500">Fall 2025, Karlsruhe Institute of Technology</p>
-                    <p class="font-semibold text-gray-800">Course: Empirical Software Engineering</p>
-                    <p class="text-gray-600 text-sm">Role: Guest Lectuer. Provided a guest lecture "Software Repository Mining in Empirical Software Engineering.".</p>
-                </li>
-                <li class="border-l-4 border-yellow-500 pl-4">
-                    <p class="text-sm text-gray-500">Fall 2024, University of Gothenburg</p>
-                    <p class="font-semibold text-gray-800">Course: Software Engineering for Data-Intensive AI Applications</p>
-                    <p class="text-gray-600 text-sm">Role: Lectuer. Provided part of the lectures in the whole course.</p>
-                </li>
-                <li class="border-l-4 border-yellow-500 pl-4">
-                    <p class="text-sm text-gray-500">Spring 2024, University of Gothenburg</p>
-                    <p class="font-semibold text-gray-800">Course: Software Analysis and Design</p>
-                    <p class="text-gray-600 text-sm">Role: Leader of Teaching Assistant, Grader. Responsibilities included TA management, grading.</p>
-                </li>
-                <li class="border-l-4 border-yellow-500 pl-4">
-                    <p class="text-sm text-gray-500">Fall 2023, University of Gothenburg</p>
-                    <p class="font-semibold text-gray-800">Course: Software evolution project</p>
-                    <p class="text-gray-600 text-sm">Role: Teaching Assistant. Focused on Python implementation, technical support, and student mangement.</p>
-                </li>
-                <li class="border-l-4 border-yellow-500 pl-4">
-                    <p class="text-sm text-gray-500">Fall 2022, University of Gothenburg</p>
-                    <p class="font-semibold text-gray-800">Course:  Software Architecture</p>
-                    <p class="text-gray-600 text-sm">Role: Teaching Assistant, Grader. Responsibilities included lab sessions, grading student course papers.</p>
-                </li>
-                <li class="border-l-4 border-yellow-500 pl-4">
-                    <p class="text-sm text-gray-500">Spring 2021 and Spring 2022, University of Gothenburg</p>
-                    <p class="font-semibold text-gray-800">Course: Software Language Engineering for Domain-Specific Languages</p>
-                    <p class="text-gray-600 text-sm">Role: Teaching Assistant, Grader. Responsibilities included group management, leading weekly lab sessions for multiple groups of students, and grading student projects.</p>
-                </li>
-                <li class="border-l-4 border-yellow-500 pl-4">
-                    <p class="text-sm text-gray-500">Fall 2020, University of Gothenburg</p>
-                    <p class="font-semibold text-gray-800">Course: Team-Programming</p>
-                    <p class="text-gray-600 text-sm">Role: Teaching Assistant. Responsibilities included group management, leading weekly lab sessions for multiple groups of students, and grading student projects.</p>
-                </li>
-            </ul>
-        </section>
-
-        <!-- 7. 评审经历 (Reviewing Experience) -->
-        <section id="reviewing" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
-            <h3 class="text-3xl font-bold text-gray-800 section-heading">Reviewing Experience</h3>
-            
-            <div class="space-y-4 text-gray-700">
-                <p>Reviewer for:</p>
-                <ul class="list-disc list-inside ml-4 grid md:grid-cols-2 gap-2 text-sm">
-                    <li>The special issue "Software Language Engineering" of Journal of Systems and Software</li>
-                    <li>The journal of IEEE Transactions on Industrial Cyber-Physical Systems</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- 8. Grants and Awards -->
-        <section id="awards" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
-            <h3 class="text-3xl font-bold text-gray-800 section-heading">Grants and Awards</h3>
-            
-            <ul class="space-y-3">
-                <li class="flex items-start">
-                    <span class="text-blue-600 mr-3 text-xl">&#9733;</span>
-                    <div>
-                        <p class="font-semibold text-gray-800">2022 SoSyM-First Paper Award</p>
-                        <p class="text-gray-600 text-sm"> Awarded October 2022</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <!-- 9. 新闻与更新 (News & Updates) - 简洁列表样式 -->
-        <section id="news" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
-            <h3 class="text-3xl font-bold text-gray-800 section-heading">News & Updates</h3>
-            
-            <ul class="list-none space-y-2">
-                <!-- 新闻/事件 1 -->
-                <li class="text-gray-700">
-                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2025/12/09:</span> 
-                    Provided a guest lecture "Software Repository Mining in Empirical Software Engineering" for the course "Empirical Software Engineering" at KIT.
-                </li>
-
-                <!-- 新闻/事件 1 -->
-                <li class="text-gray-700">
-                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2025/10/15:</span> 
-                    Successfully defended my Doctoral dissertation at the University of Gothenburg.
-                </li>
-
-                <!-- 新闻/事件 1 -->
-                <li class="text-gray-700">
-                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2025/10/01:</span> 
-                    Joined Karlsruhe Institute of Technology (KIT) as a Post-Doctoral Researcher.
-                </li>
-
-                <!-- 新闻/事件 1 -->
-                <li class="text-gray-700">
-                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2025/06/10:</span> 
-                    Presented on the First Large Language Models for Software Engineering Workshop (LLM4SE 2025).
-                </li>
-
-                <!-- 新闻/事件 1 -->
-                <li class="text-gray-700">
-                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2024/08/29:</span> 
-                    Presented on the 50th Euromicro Conference Series on Software Engineering and Advanced Applications (SEAA 2024).
-                </li>
-                
-                <!-- 新闻/事件 2 -->
-                <li class="text-gray-700">
-                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2023/11/29:</span> 
-                    Passed the Licentiate thesis defense.
-                </li>
-
-                <!-- 新闻/事件 2 -->
-                <li class="text-gray-700">
-                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2023/10/23:</span> 
-                    Presented on 16th ACM SIGPLAN International Conference on Software Language Engineering (SLE 2023)
-                </li>
-
-                <!-- 新闻/事件 2 -->
-                <li class="text-gray-700">
-                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2023/02/20:</span> 
-                    Presented on 11th International Conference on Model-Based Software and Systems Engineering (MODELSWARD 2023)
-                </li>
-                
-                <!-- 新闻/事件 3 -->
-                <li class="text-gray-700">
-                    <span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2020/09/01:</span> 
-                    Joined the CSE department at the University of Gothenburg and Chalmers University of Gothenburg a Ph.D. student.
-                </li>
-                
-                <!-- 您可以继续添加更多新闻，例如：论文接收、Grants 获批等 -->
-                <!-- 示例：<li class="text-gray-700"><span class="font-semibold text-blue-600 w-24 inline-block flex-shrink-0">2025/01/20:</span> Our paper on LLMs in SE was accepted by ICSE 2025.</li> -->
-
-            </ul>
         </section>
 
         <!-- 10. 项目 (Projects) -->
