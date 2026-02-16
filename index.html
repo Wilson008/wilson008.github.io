@@ -58,7 +58,7 @@
     <!-- 顶部导航栏，用于快速跳转 -->
     <nav class="md:fixed md:left-0 md:top-0 md:h-full md:w-48 bg-white shadow-md p-4 z-50 overflow-y-auto">
         <div class="flex flex-col items-center mb-6 pt-2 pb-4 border-b border-gray-100">
-            <img src="figures/profile.png" alt="Mini Avatar" class="w-16 h-16 rounded-full border-2 border-blue-500 mb-2 object-cover">
+            <img src="figures/profile_2.png" alt="Mini Avatar" class="w-16 h-16 rounded-full border-2 border-blue-500 mb-2 object-cover">
         </div>
 
         <div class="flex flex-col space-y-2 text-sm font-medium">
@@ -404,16 +404,31 @@
             </ul>
         </section>
 
-        <!-- 7. 评审经历 (Reviewing Experience) -->
-        <section id="reviewing" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
-            <h3 class="text-3xl font-bold text-gray-800 section-heading">Reviewing Experience</h3>
+        <!-- 7. 学术服务 (Services) -->
+        <section id="services" class="mb-12 bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 section-heading">Services</h3>
             
-            <div class="space-y-4 text-gray-700">
-                <p>Reviewer for:</p>
-                <ul class="list-disc list-inside ml-4 grid md:grid-cols-2 gap-2 text-sm">
-                    <li>The special issue "Software Language Engineering" of Journal of Systems and Software</li>
-                    <li>The journal of IEEE Transactions on Industrial Cyber-Physical Systems</li>
-                </ul>
+            <div class="space-y-6 text-gray-700">
+                
+                <!-- Reviewer -->
+                <div>
+                    <p class="font-semibold">Reviewer for:</p>
+                    <ul class="list-disc list-inside ml-4 grid md:grid-cols-2 gap-2 text-sm">
+                        <li>The special issue "Software Language Engineering" of Journal of Systems and Software</li>
+                        <li>The journal of IEEE Transactions on Industrial Cyber-Physical Systems</li>
+                    </ul>
+                </div>
+
+                <!-- Conference Committees -->
+                <div>
+                    <p class="font-semibold">Conference Committee Member:</p>
+                    <ul class="list-disc list-inside ml-4 grid md:grid-cols-2 gap-2 text-sm">
+                        <li>Artifact Evaluation Committee Member, [European Conference on Object-Oriented Programming, 2026]</li>
+                        <li>Program Committee Member, [The ACM SIGPLAN International Conference on Generative Programming: Concepts & Experiences (GPCE), 2026]</li>
+                        <!-- 按需继续添加 -->
+                    </ul>
+                </div>
+
             </div>
         </section>
 
