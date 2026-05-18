@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leveraging LLMs for Grammar Adaptation: A Study on Metamodel-Grammar Co-Evolution</title>
+
+    <!-- ---------------------------------------------------------------- -->
+    <!--          GOOGLE SCHOLAR METADATA TAGS (HIGHWIRE PRESS)           -->
+    <!-- ---------------------------------------------------------------- -->
+
+    <!-- 论文标题 -->
+    <meta name="citation_title" content="Leveraging LLMs for Grammar Adaptation: A Study on Metamodel-Grammar Co-Evolution">
+
+    <!-- 作者姓名 (每位作者重复一次) -->
+    <meta name="citation_author" content="Zhang, Weixing">
+    <meta name="citation_author" content="Jiang, Bowen">
+    <meta name="citation_author" content="Sharma, Rahul">
+    <meta name="citation_author" content="Hebig, Regina">
+    <meta name="citation_author" content="Strüber, Daniel">
+
+    <!-- 发表日期 (ECMFA 2026 — 待会议确认后更新) -->
+    <meta name="citation_date" content="2026">
+
+    <!-- 期刊信息 (ECMFA 论文发表于 JOT Special Issue) -->
+    <meta name="citation_journal_title" content="Journal of Object Technology">
+    <meta name="citation_publisher" content="AITO">
+
+    <!-- 会议信息 -->
+    <meta name="citation_conference_title" content="22nd European Conference on Modelling Foundations and Applications (ECMFA 2026)">
+
+    <!-- PDF URL -->
+    <meta name="citation_pdf_url" content="https://wilson008.github.io/papers/2026-ecmfa-zhang.pdf">
+
+    <!-- DOI (占位符，正式分配后请替换) -->
+    <!-- <meta name="citation_doi" content="10.5381/jot.yyyy.vv.nn.aa"> -->
+
+    <!-- arXiv -->
+    <meta name="citation_arxiv_id" content="2505.12534">
+
+    <!-- 摘要 -->
+    <meta name="description" content="An LLM-based approach for automating metamodel-grammar co-evolution in Xtext-based DSLs, evaluated on six real-world DSLs using three LLMs (Claude Sonnet 4.5, ChatGPT 5.1, Gemini 3). LLMs achieved 100% grammar rule-level adaptation consistency on test set DSLs, outperforming rule-based baselines, while revealing scalability limitations on large-scale grammars.">
+
+    <!-- 关键词 -->
+    <meta name="citation_keywords" content="Large language models, Grammar adaptation, Metamodel-grammar co-evolution, Domain-specific languages, Xtext">
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f4f7f9; }
+    </style>
+</head>
+<body class="p-8 max-w-4xl mx-auto bg-white shadow-xl rounded-lg mt-10">
+    <header class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">Leveraging LLMs for Grammar Adaptation: A Study on Metamodel-Grammar Co-Evolution</h1>
+        <p class="text-lg text-gray-600 mt-2">Zhang, W., Jiang, B., Sharma, R., Hebig, R., &amp; Strüber, D.</p>
+        <p class="text-sm text-gray-500 font-medium mt-1">
+            22nd European Conference on Modelling Foundations and Applications (ECMFA 2026)
+            &middot; Journal of Object Technology (Special Issue)
+        </p>
+        <p class="text-sm text-gray-400 mt-1">
+            Preprint: <a href="https://arxiv.org/abs/2505.12534" class="text-blue-500 hover:underline">arXiv:2505.12534</a>
+            &nbsp;|&nbsp;
+            DOI: <span class="text-gray-400">10.5381/jot.yyyy.vv.nn.aa</span> <span class="text-xs text-yellow-600">(to be updated upon publication)</span>
+        </p>
+    </header>
+
+    <div class="space-y-4">
+        <h2 class="text-xl font-semibold text-blue-600 border-b pb-2 mb-4">Abstract</h2>
+        <p class="text-gray-700 leading-relaxed">
+            In model-driven engineering, metamodel evolution leads to the need to adapt corresponding grammars to maintain
+            consistency, which typically requires tedious manual work. Existing rule-based methods can achieve partial automation but
+            have limitations when handling complex grammar scenarios. This paper proposes a Large Language Model-based approach
+            that automatically applies adaptations to new grammars after evolution by learning grammar adaptations from previous versions.
+            We evaluated this approach on six real-world Xtext domain-specific languages, using four DSLs as a training set to develop
+            prompting strategies, two DSLs as a test set for validation, and conducting a longitudinal case study on QVTo. The evaluation
+            used three Large Language Models (Claude Sonnet 4.5, ChatGPT 5.1, Gemini 3) and measured grammar adaptation quality
+            from three dimensions: grammar rule-level adaptation consistency, output similarity, and metamodel conformance. Results
+            show that on the test set, all three LLMs achieved 100% adaptation consistency and output similarity, while the rule-based
+            approach achieved only 84.21% on DOT and 62.50% on Xcore. In the QVTo longitudinal study, the LLM-based approach
+            successfully reused learned adaptations across all three evolution steps without manual grammar editing, while the rule-based
+            approach required manual adjustments in two of three transitions. However, on large-scale grammars (EAST-ADL, 297 rules),
+            LLMs' adaptation consistency was far below 90%. This study demonstrates the advantages of LLM-based approaches in
+            handling complex grammar scenarios, while revealing their limitations in large-scale grammar adaptation.
+        </p>
+    </div>
+
+    <div class="mt-8 text-center">
+        <a href="2026-ecmfa-zhang.pdf" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-md">
+            Download Full PDF
+        </a>
+        <p class="text-gray-500 text-sm mt-2">
+            This page contains the academic metadata required for Google Scholar indexing.
+        </p>
+    </div>
+</body>
+</html>
