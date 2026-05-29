@@ -5,6 +5,7 @@
     <meta name="google-site-verification" content="rvzMeR2-9vuUlHbv5SE3Xx4hu85wDMArIPJtlw5-4wE" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zhang's Academic & Professional Portfolio</title>
+    <link rel="canonical" href="https://wilson008.github.io/" />
     <!-- 加载 Tailwind CSS 框架 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 使用 Inter 字体并配置 Tailwind -->
@@ -104,11 +105,11 @@
                         </p>
                     </div>
 
-                    <p class="text-gray-600 leading-relaxed">
-                        <strong class="text-red-600">Important information:</strong><br>
-                        I've been the target of defamation since the beginning of 2025. 
-                        A cybercriminal has been continuously defaming me. For details, please refer to <a href="#warning" class="text-blue-600 font-semibold hover:underline">"Important Notice"</a> tab on this page.
-                    </p>
+                    <ul class="text-yellow-700 list-disc list-inside space-y-2">
+                        <li><strong class="text-red-600">Important information:</strong></li>
+                        <li>I've been the target of defamation since the beginning of 2025. </li>
+                        <li>A cybercriminal has been continuously defaming me. For details, please refer to <a href="#warning" class="text-blue-600 font-semibold hover:underline">"Important Notice"</a> tab on this page.</li>
+                    </ul>
                 </div>
 
                 <!-- 右侧侧面: 个人信息 (Personal Info) -->
@@ -536,17 +537,15 @@
     </script>
 
     <script>
-        // 自动加载外部 HTML 模块
+        // 1. 自动加载 Publications 模块
         fetch('publications.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('publications-placeholder').innerHTML = data;
             })
             .catch(err => console.error('加载论文失败:', err));
-    </script>
-
-    <script>
-        // 自动加载外部 HTML 模块
+            
+        // 2. 自动加载 Courses 模块
         fetch('courses.html')
             .then(response => response.text())
             .then(data => {
