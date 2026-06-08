@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoCoPath: Concolic Exploration of Consistency-Preserving Paths</title>
+
+    <!-- ---------------------------------------------------------------- -->
+    <!--          GOOGLE SCHOLAR METADATA TAGS (HIGHWIRE PRESS)           -->
+    <!-- ---------------------------------------------------------------- -->
+
+    <!-- 论文标题 -->
+    <meta name="citation_title" content="CoCoPath: Concolic Exploration of Consistency-Preserving Paths">
+
+    <!-- 作者姓名 -->
+    <meta name="citation_author" content="Jiang, Bowen">
+    <meta name="citation_author" content="Boss, Miriam">
+    <meta name="citation_author" content="Weber, Thomas">
+    <meta name="citation_author" content="Zhang, Weixing">
+    <meta name="citation_author" content="Ulbrich, Mattias">
+    <meta name="citation_author" content="Koziolek, Anne">
+
+    <!-- 发表日期 -->
+    <meta name="citation_date" content="2026/07/01">
+
+    <!-- 期刊信息 -->
+    <meta name="citation_journal_title" content="Journal of Object Technology">
+
+    <!-- PDF 文件的完整 URL -->
+    <meta name="citation_pdf_url" content="https://wilson008.github.io/papers/2026-ecmfa-cocopath.pdf">
+
+    <!-- DOI -->
+    <meta name="citation_doi" content="10.5381/jot.yyyy.vv.nn.aa">
+
+    <!-- 摘要 -->
+    <meta name="description" content="CoCoPath is a concolic execution framework for systematically exploring execution paths in consistency-preserving model transformations, combining dynamic taint tracking, concolic execution, and model transformation frameworks to derive potential target models and resolve temporary inconsistency.">
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f4f7f9; }
+    </style>
+</head>
+<body class="p-8 max-w-4xl mx-auto bg-white shadow-xl rounded-lg mt-10">
+    <header class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">CoCoPath: Concolic Exploration of Consistency-Preserving Paths</h1>
+        <p class="text-lg text-gray-600 mt-2">Jiang, B., Boss, M., Weber, T., Zhang, W., Ulbrich, M., &amp; Koziolek, A.</p>
+        <p class="text-sm text-gray-500 font-medium">Journal of Object Technology &middot; ECMFA'26 — The 22nd European Conference on Modelling Foundations and Applications</p>
+        <p class="text-sm text-gray-400 mt-1">DOI: <a href="https://doi.org/10.5381/jot.yyyy.vv.nn.aa" class="text-blue-500 hover:underline">10.5381/jot.yyyy.vv.nn.aa</a></p>
+    </header>
+
+    <div class="space-y-4">
+        <h2 class="text-xl font-semibold text-blue-600 border-b pb-2 mb-4">Abstract</h2>
+        <p class="text-gray-700 leading-relaxed">
+            Maintaining consistency between related models is achieved through Consistency Preservation Rules (CPRs) that propagate
+            changes from a source model to a target model. However, in many cases, additional input from the maintainer of a target
+            model, based on their domain knowledge, is required to integrate changes into target models. Therefore, the change cannot
+            be propagated automatically and introduces temporary inconsistency. To manage the temporary inconsistency, we propose
+            CoCoPath, a concolic execution framework for systematically exploring execution paths in consistency-preserving model
+            transformations. We combine dynamic taint tracking, concolic execution, and model transformation frameworks to derive
+            potential target models based on the source model, the consistency preservation rules, and optional domain constraints to
+            further restrict the search space. By comparing these alternative target models, users can explore the consequences of different
+            additional inputs and resolve temporary inconsistency in an informed manner. We validate our contribution by applying our
+            approach to an industry case study, showcasing its capabilities for one and multiple awaited user inputs.
+        </p>
+    </div>
+
+    <div class="mt-8 text-center">
+        <a href="2026-ecmfa-cocopath.pdf" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-md">
+            Download Full PDF
+        </a>
+        <p class="text-gray-500 text-sm mt-2">
+            This page contains the academic metadata required for Google Scholar indexing.
+        </p>
+    </div>
+</body>
+</html>
