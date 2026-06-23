@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Level vs. Multi-Level Modelling: An Empirical Study of Cascading Maintenance Burden</title>
+
+    <!-- ---------------------------------------------------------------- -->
+    <!--          GOOGLE SCHOLAR METADATA TAGS (HIGHWIRE PRESS)           -->
+    <!-- ---------------------------------------------------------------- -->
+
+    <!-- 论文标题 -->
+    <meta name="citation_title" content="Two-Level vs. Multi-Level Modelling: An Empirical Study of Cascading Maintenance Burden">
+
+    <!-- 作者姓名 -->
+    <meta name="citation_author" content="Fu, Yuhong">
+    <meta name="citation_author" content="Zhang, Weixing">
+    <meta name="citation_author" content="Jiang, Bowen">
+    <meta name="citation_author" content="Cheng, Haowei">
+    <meta name="citation_author" content="Grossmann, Georg">
+    <meta name="citation_author" content="Kaur, Karamjit">
+    <meta name="citation_author" content="Selway, Matt">
+    <meta name="citation_author" content="Stumptner, Markus">
+
+    <!-- 发表日期 (接受通知日期) -->
+    <meta name="citation_date" content="2026/06/22">
+
+    <!-- 会议信息 -->
+    <meta name="citation_conference_title" content="The 42nd IEEE International Conference on Software Maintenance and Evolution (ICSME 2026) – Registered Reports">
+
+    <!-- PDF 文件的完整 URL -->
+    <meta name="citation_pdf_url" content="https://wilson008.github.io/papers/2026-icsme-rr-fu.pdf">
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f4f7f9; }
+    </style>
+</head>
+<body class="p-8 max-w-4xl mx-auto bg-white shadow-xl rounded-lg mt-10">
+    <header class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">Two-Level vs. Multi-Level Modelling: An Empirical Study of Cascading Maintenance Burden</h1>
+        <p class="text-lg text-gray-600 mt-2">Fu, Y., Zhang, W., Jiang, B., Cheng, H., Grossmann, G., Kaur, K., Selway, M., &amp; Stumptner, M.</p>
+        <p class="text-sm text-gray-500 font-medium">ICSME 2026 — The 42nd IEEE International Conference on Software Maintenance and Evolution · Registered Reports</p>
+        <p class="text-sm text-gray-400 mt-1">Accepted: June 22, 2026</p>
+    </header>
+
+    <div class="space-y-4">
+        <h2 class="text-xl font-semibold text-blue-600 border-b pb-2 mb-4">Abstract</h2>
+        <p class="text-gray-700 leading-relaxed">
+            When a core definition in a software system changes, every dependent artefact must be updated to remain
+            consistent. This cascading update problem pervades software maintenance and recurs in Model-Driven
+            Engineering (MDE), where the evolution of a metamodel forces every conforming model to be migrated in
+            lockstep. The dominant MDE paradigm, two-level modelling (2LM), fragments domain knowledge across two
+            artefacts that must be kept mutually consistent, making this co-evolution a source of inconsistencies and
+            maintenance effort. An alternative paradigm, multi-level modelling (MLM), unifies these artefacts into one
+            and is claimed in the literature to reduce co-evolution burden. Prior empirical work has examined MLM's
+            applicability and modelling effort, but its effect on co-evolution and maintenance burden has not yet been
+            tested in a controlled, paired comparison against 2LM.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+            We hypothesise that, for semantically equivalent evolution scenarios, MLM's structural unification yields
+            fewer post-change inconsistencies and a smaller modification footprint than the 2LM split-artefact
+            arrangement. To test this hypothesis, we present a pre-registered, mutation-based empirical comparison of
+            co-evolution behaviour in 2LM and MLM; empirical results will follow in Stage 2. From a curated corpus of
+            published 2LM co-evolution scenarios, we construct semantically equivalent MLM counterparts, apply
+            identical evolution mutations to both, and measure outcomes through automated consistency checking and
+            pre-registered hypothesis tests. Positive controls and a blinded mapping protocol guard against bias
+            favouring MLM. This design provides the first empirical framework for assessing whether paradigm-level
+            structural choices affect the cascading maintenance burden in model-based systems, operationalising
+            co-evolution burden as two automatically measurable outcome variables, and delivering a reusable
+            benchmarking protocol to support replication and extension.
+        </p>
+    </div>
+
+    <div class="mt-8 text-center">
+        <a href="2026-icsme-rr-fu.pdf" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-md">
+            Download Full PDF
+        </a>
+        <p class="text-gray-500 text-sm mt-2">
+            This page contains the academic metadata required for Google Scholar indexing.
+        </p>
+    </div>
+</body>
+</html>
